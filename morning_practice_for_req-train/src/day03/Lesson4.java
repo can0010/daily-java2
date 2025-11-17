@@ -27,13 +27,35 @@ input number? >>13
 */
 package day03;
 
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
+
 
 public class Lesson4 {
-
-	public static void main(String[] args) throws IOException {
+	
+	public static void main(String[] args) throws IOException{
+		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+		
+		System.out.println("input number?");
+		
+		String str = reader.readLine();
 		/*ここから記入*/
-
+		
+		int num = Integer.parseInt(str);
+		
+		
+		if (num % 3 ==0 && num % 5 == 0 )  {
+			System.out.println("fizzbuzz"); 
+			
+		} else if (num % 3 ==0) {
+			System.out.println("fizz");
+			
+		} else if (num % 5 == 0) {
+			System.out.println("buzz");
+		
+		} else {
+		System.out.println(num);
+		}
 	}
-
 }

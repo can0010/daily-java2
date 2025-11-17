@@ -26,7 +26,7 @@ public class Lesson3 {
 
 		//int sum = 0;// 合計金額
 		//int average = 0;// 平均金額
-		//int inputCount = 0;//入力した回数
+		int inputCount = 0;//入力した回数
 
 		/*ここから記入*/
 		
@@ -55,7 +55,7 @@ public class Lesson3 {
 		System.out.println("①から③の合計金額は税込み" + sum + "円");
 		
 		//平均金額の算出
-		int average = (int)(((num*f)+(num1*f)+(num2*f)) / 3 );
+		int average = (int)(((num*f)+(num1*f)+(num2*f)) / inputCount );
 		System.out.println("①から③の平均は税込み" + average + "円");
 		
 
